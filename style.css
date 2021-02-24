@@ -1,0 +1,39 @@
+body {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-family: Verdana;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+    color: var(--couleur-speciale);
+}
+
+h2:hover {
+    color: var(--couleur-speciale);
+}
+
+#etiquette {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+}
+
+:root {
+    --couleur-speciale: red;
+}
