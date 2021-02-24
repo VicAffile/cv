@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: var(--couleur-fond);
     color: white;
     font-family: Verdana;
 }
@@ -14,7 +14,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: var(--couleur-header);
 }
 
 h1 {
@@ -23,6 +23,29 @@ h1 {
 
 h2:hover {
     color: var(--couleur-speciale);
+}
+
+img {
+    border-radius: 10px;
+}
+
+img+p {
+    margin-left: 30px;
+}
+
+.couleur_speciale {
+    color: var(--couleur-speciale);
+}
+
+#accueil {
+    padding: 5px;
+    border: solid var(--couleur-header) 2px;
+    border-radius: 10px;
+}
+
+#accueil:hover {
+    border: solid var(--couleur-speciale) 2px;
+    border-radius: 10px;
 }
 
 #etiquette {
@@ -34,6 +57,18 @@ h2:hover {
     width: 100%;
 }
 
+#presentation {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+
 :root {
     --couleur-speciale: red;
+    --couleur-fond: rgba(0, 0, 0, 0.9);
+    --couleur-header: rgba(0, 0, 0, 0.6);
 }
