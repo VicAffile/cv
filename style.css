@@ -19,6 +19,7 @@ header {
     align-items: center;
     width: 100%;
     background-color: var(--couleur-header);
+    z-index: 10;
 }
 
 hr {
@@ -30,7 +31,7 @@ h1 {
     color: var(--couleur-speciale);
 }
 
-h2:hover {
+h3:hover {
     color: var(--couleur-speciale);
 }
 
@@ -39,8 +40,10 @@ img {
 }
 
 .base_zoom {
+    position: relative;
     overflow: hidden;
     border-radius: 10px;
+    z-index: 0;
 }
 
 .couleur_speciale {
