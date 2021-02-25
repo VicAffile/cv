@@ -66,7 +66,7 @@ img {
 
 #accueil {
     padding: 5px;
-    border: solid var(--couleur-header) 2px;
+    border: solid rgba(0, 0, 0, 0) 2px;
     border-radius: 10px;
 }
 
@@ -82,6 +82,34 @@ img {
     justify-content: space-around;
     align-items: flex-start;
     width: 100%;
+}
+
+#mur_base {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#mur_vertical {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#mur_2 {
+    border-radius: 10px 0px 0px 10px;
+}
+
+#mur_3 {
+    border-radius: 0px 10px 0px 0px;
+}
+
+#mur_4 {
+    border-radius: 0px 0px 10px 0px;
 }
 
 #presentation {
