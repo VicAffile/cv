@@ -26,16 +26,16 @@ section h1 {
     font-size: xx-large;
 }
 
-.couleur_speciale {
-    color: var(--couleur-speciale);
-}
-
-#qui_suis_je {
+.article {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
+}
+
+.couleur_speciale {
+    color: var(--couleur-speciale);
 }
 
 :root {
