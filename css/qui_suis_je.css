@@ -1,0 +1,43 @@
+li {
+    font-size: x-large;
+}
+
+.zoom {
+    width: 25%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.zoom img {
+    object-fit: contain;
+    transform: all 1s ease;
+}
+
+.zoom img:hover {
+    transform: scale(1.25);
+}
+
+#qui_suis_je_contenu {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#qui_suis_je_photo {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+#qui_suis_je_texte {
+    margin-top: 50px;
+    width: 60%;
+    text-align: justify;
+    font-size: large;
+}
