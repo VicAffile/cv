@@ -17,7 +17,6 @@
 }
 
 #presentation {
-    margin-top: 180px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -28,4 +27,8 @@
 
 #presentation div img {
     object-fit: contain;
+}
+
+#presentation_premiere_balise {
+    margin-top: 180px;
 }

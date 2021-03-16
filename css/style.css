@@ -34,6 +34,10 @@ section h1 {
     align-items: center;
 }
 
+.article h1 {
+    margin-bottom: 75px;
+}
+
 .couleur_speciale {
     color: var(--couleur-speciale);
 }

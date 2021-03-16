@@ -1,0 +1,115 @@
+h1+.competence_ligne {
+    align-items: center;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+h1+.competence_ligne img {
+    width: 45%;
+    height: auto;
+}
+
+h1+.competence_ligne div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 45%;
+}
+
+h1+.competence_ligne div h3:hover {
+    color: white;
+}
+
+h1+.competence_ligne p {
+    font-size: large;
+}
+
+.competence_ligne {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.competence_ligne img {}
+
+.competence_ligne li+li {
+    font-size: medium;
+}
+
+.competence_ligne ul {
+    width: 40%;
+}
+
+.logo {
+    list-style-type: none;
+    font-family: "Font Awesome 5 Brands";
+}
+
+.logo::before {
+    margin-right: 15px;
+    color: var(--couleur-speciale);
+}
+
+.logo span {
+    font-family: Verdana;
+    font-weight: bold;
+    color: var(--couleur-speciale);
+}
+
+#algo::before {
+    content: "\ec3f";
+    font-family: 'boxicons'!important;
+}
+
+#competence ul {
+    padding-left: 0px;
+}
+
+#cpp::before {
+    content: "\ee70";
+    font-family: 'boxicons'!important;
+}
+
+#css::before {
+    content: "\f38b";
+}
+
+#html::before {
+    content: "\f13b";
+}
+
+#java::before {
+    content: "\f4e4";
+}
+
+#js::before {
+    content: "\f3b9";
+}
+
+#math::before {
+    content: "\e977";
+    font-family: 'boxicons'!important;
+}
+
+#mysql::before {
+    content: "\ecca";
+    font-family: 'boxicons'!important;
+}
+
+#nodejs::before {
+    content: "\f419";
+}
+
+#php::before {
+    content: "\f457";
+    font-weight: 900;
+}
+
+#python::before {
+    content: "\f3e2      ";
+}

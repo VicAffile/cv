@@ -21,7 +21,6 @@ li {
 }
 
 #qui_suis_je_contenu {
-    margin-top: 75px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
