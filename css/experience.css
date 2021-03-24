@@ -11,8 +11,6 @@
     height: 100%;
     border-radius: 10px 10px 0px 0px;
     object-fit: cover;
-    grid-row-start: 2;
-    grid-row-end: 2;
 }
 
 .experience p {
@@ -32,6 +30,7 @@
 }
 
 .experience:hover .experience_image {
+    transition: 0.5s;
     opacity: 0.5;
 }
 
@@ -47,7 +46,8 @@
 }
 
 .experience:hover .experience_details {
-    z-index: 5;
+    transition: 1s;
+    z-index: 3;
     width: 100%;
     height: auto;
     grid-column-start: 1;
@@ -61,11 +61,11 @@
 }
 
 #experience_grid {
+    width: 60%;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1.2fr);
     grid-column-gap: 2.5%;
     grid-row-gap: 2.5%;
-    width: 60%;
-    height: auto;
 }
