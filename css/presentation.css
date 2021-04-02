@@ -29,6 +29,7 @@
     object-fit: contain;
 }
 
-#presentation_premiere_balise {
+#presentation_premiere_balise,
+#presentation_premiere_balise+p {
     margin-top: 180px;
 }
