@@ -21,7 +21,7 @@ header {
     z-index: 10;
 }
 
-h3:hover {
+a:hover {
     color: var(--couleur-speciale);
 }
 
