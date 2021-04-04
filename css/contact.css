@@ -118,7 +118,6 @@ textarea {
 }
 
 #facebook {
-    color: var(--couleur-speciale);
     font-family: "Font Awesome 5 Brands";
     font-size: xx-large;
 }
@@ -128,7 +127,6 @@ textarea {
 }
 
 #git {
-    color: var(--couleur-speciale);
     font-family: "Font Awesome 5 Brands";
     font-size: xx-large;
 }
@@ -138,7 +136,6 @@ textarea {
 }
 
 #instagram {
-    color: var(--couleur-speciale);
     font-family: "Font Awesome 5 Brands";
     font-size: xx-large;
 }
@@ -148,7 +145,6 @@ textarea {
 }
 
 #linkedin {
-    color: var(--couleur-speciale);
     font-family: "Font Awesome 5 Brands";
     font-size: xx-large;
 }

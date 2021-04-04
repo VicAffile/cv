@@ -42,6 +42,10 @@ section h1 {
     color: var(--couleur-speciale);
 }
 
+.gras {
+    font-weight: bold;
+}
+
 :root {
     --couleur-speciale: red;
     --couleur-fond: rgba(0, 0, 0, 0.9);
