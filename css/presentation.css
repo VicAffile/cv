@@ -1,6 +1,5 @@
 .rotation {
-    width: 422.4px;
-    height: 563.2px;
+    width: 25%;
     position: relative;
     border-radius: 10px;
 }
@@ -32,4 +31,35 @@
 #presentation_premiere_balise,
 #presentation_premiere_balise+p {
     margin-top: 180px;
+}
+
+@media all and (max-width: 1000px) and (min-width: 680px) {
+    #presentation {
+        font-size: x-large;
+    }
+}
+
+@media all and (max-width: 680px) and (min-width: 500px) {
+    #presentation {
+        font-size: large;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .rotation {
+        width: 50%;
+    }
+    #presentation {
+        flex-direction: column;
+        font-size: x-large;
+    }
+    #presentation_premiere_balise+p {
+        margin-top: 10px;
+    }
+}
+
+@media all and (max-width: 440px) {
+    #presentation {
+        font-size: large;
+    }
 }
