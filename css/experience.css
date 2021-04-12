@@ -1,9 +1,8 @@
 .experience {
+    padding: 10px;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.4);
     display: grid;
     grid-template-rows: 80% 20%;
-    contain: content;
 }
 
 .experience img {
@@ -17,6 +16,10 @@
     margin: 0px;
     text-align: justify;
     font-weight: bold;
+}
+
+.experience_descriptif {
+    width: 330px;
 }
 
 .experience_image {
@@ -58,14 +61,26 @@
 
 .experience_titre {
     padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 #experience_grid {
-    width: 60%;
-    height: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1.2fr);
-    grid-column-gap: 2.5%;
-    grid-row-gap: 2.5%;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: repeat(2, 339px);
+}
+
+@media all and (max-width: 1200px) and (min-width: 830px) {
+    #experience_grid {
+        grid-template-columns: repeat(2, 370px);
+        grid-template-rows: repeat(3, 339px);
+    }
+}
+
+@media all and (max-width: 830px) {
+    #experience_grid {
+        grid-template-columns: repeat(1, 370px);
+        grid-template-rows: repeat(6, 339px);
+    }
 }
