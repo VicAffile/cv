@@ -56,6 +56,10 @@ li {
     object-fit: contain;
 }
 
+#qui_suis_je_ecole_contenu {
+    display: none;
+}
+
 #qui_suis_je_presentation_contenu {
     display: none;
 }
@@ -73,4 +77,46 @@ li {
     width: 60%;
     text-align: justify;
     font-size: large;
+}
+
+#qui_suis_je_texte p {
+    font-size: x-large;
+}
+
+@media all and (max-width: 1000px) {
+    .zoom {
+        width: 80%;
+    }
+    #qui_suis_je_contenu {
+        width: 80%;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    #qui_suis_je_contenu ul {
+        width: 80%;
+    }
+    #qui_suis_je_texte {
+        width: 95%;
+    }
+}
+
+@media all and (max-width: 765px) {
+    .zoom {
+        width: 95%;
+    }
+    #qui_suis_je_contenu ul {
+        width: 95%;
+    }
+}
+
+@media all and (max-width: 645px) {
+    .zoom {
+        width: 100%;
+    }
+    #qui_suis_je_contenu {
+        width: 95%;
+    }
+    #qui_suis_je_contenu ul {
+        width: 100%;
+    }
 }

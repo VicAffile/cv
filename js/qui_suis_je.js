@@ -4,6 +4,8 @@ document.getElementById('qui_suis_je_passion_titre').querySelectorAll('span')[0]
 document.getElementById('qui_suis_je_passion_titre').querySelectorAll('span')[1].style.display = 'none';
 document.getElementById('qui_suis_je_job_titre').querySelectorAll('span')[0].style.display = 'contents';
 document.getElementById('qui_suis_je_job_titre').querySelectorAll('span')[1].style.display = 'none';
+document.getElementById('qui_suis_je_ecole_titre').querySelectorAll('span')[0].style.display = 'contents';
+document.getElementById('qui_suis_je_ecole_titre').querySelectorAll('span')[1].style.display = 'none';
 
 function fleche(e) {
     let fleche = e.querySelectorAll("span");
