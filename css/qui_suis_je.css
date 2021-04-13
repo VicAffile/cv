@@ -2,16 +2,26 @@ li {
     font-size: x-large;
 }
 
-.fleche {
-    font-family: 'boxicons'!important;
+.bas::before {
+    content: "\e98c";
 }
 
 .droite::before {
     content: "\e992";
 }
 
-.bas::before {
-    content: "\e98c";
+.fleche {
+    font-family: 'boxicons';
+}
+
+.qui_suis_je_titre {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: var(--couleur-form);
+}
+
+.qui_suis_je_titre:hover {
+    color: var(--couleur-speciale);
 }
 
 .zoom {
@@ -46,15 +56,21 @@ li {
     object-fit: contain;
 }
 
+#qui_suis_je_presentation_contenu {
+    display: none;
+}
+
+#qui_suis_je_passion_contenu {
+    display: none;
+}
+
+#qui_suis_je_job_contenu {
+    display: none;
+}
+
 #qui_suis_je_texte {
     margin-top: 50px;
     width: 60%;
     text-align: justify;
     font-size: large;
-}
-
-:root {
-    --fleche-presentation: "\e98c";
-    --fleche-passion: "\e992";
-    --fleche-job: "\e992";
 }
