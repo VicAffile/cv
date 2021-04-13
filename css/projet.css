@@ -1,16 +1,12 @@
 .projet {
-    padding-right: 10px;
+    width: 650px;
+    height: 180px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.4);
     display: grid;
-    grid-template-columns: 45% 50%;
+    grid-template-columns: 300px 325%;
     grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 5%;
-    contain: content;
-}
-
-.projet a {
-    margin-left: 10px;
+    grid-column-gap: 25px;
 }
 
 .projet a:hover {
@@ -19,16 +15,23 @@
 }
 
 .projet img {
-    width: 100%;
-    height: 100%;
+    width: 300px;
+    height: 180px;
     border-radius: 10px 0px 0px 10px;
     object-fit: cover;
+}
+
+.projet_conteneur {
+    padding: 10px;
 }
 
 .projet_contenu {
     grid-column-start: 2;
     grid-column-end: 2;
-    width: 100%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    width: 325px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -49,11 +52,16 @@
     margin: 0px;
 }
 
+.projet_git {
+    width: 100%;
+    text-align: center;
+}
+
 .projet_image {
     grid-column-start: 1;
     grid-column-end: 1;
-    width: 100%;
-    height: auto;
+    width: 300px;
+    height: 180px;
 }
 
 .projet_intitule+p {
@@ -68,6 +76,10 @@
     min-width: 136.13px;
 }
 
+.projet_intitule_nom {
+    min-width: 58px;
+}
+
 .projet_intitule_statut {
     min-width: 70.3px;
 }
@@ -77,10 +89,8 @@
 }
 
 #projet_grid {
-    width: 80%;
+    max-width: 80%;
     display: grid;
-    grid-template-columns: repeat(2, 48.75%);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 2.5%;
-    grid-row-gap: 5%;
+    grid-template-columns: repeat(2, 670px);
+    grid-auto-rows: 200px;
 }
