@@ -226,4 +226,17 @@ h1+.competence_ligne div h3:hover {
     .competence_ligne div+div {
         margin-top: 20px;
     }
+    .competence_ligne_competence {
+        width: 100%;
+        text-align: center;
+    }
+    .competence_ligne_image {
+        width: 100%;
+    }
+    .competence_ligne_image img {
+        width: 100%;
+    }
+    .competence_ligne_titre {
+        width: 80%;
+    }
 }
