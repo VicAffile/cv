@@ -104,8 +104,23 @@ h1+.competence_ligne div h3:hover {
     content: "\f38b";
 }
 
+#energique .logo::before {
+    content: "\ec26";
+    font-family: 'boxicons';
+}
+
 #html .logo::before {
     content: "\f13b";
+}
+
+#humour .logo::before {
+    content: "\ed54";
+    font-family: 'boxicons';
+}
+
+#initiative .logo::before {
+    content: "\ec4c";
+    font-family: 'boxicons';
 }
 
 #java .logo::before {
@@ -130,6 +145,16 @@ h1+.competence_ligne div h3:hover {
     content: "\f419";
 }
 
+#passion .logo::before {
+    content: "\ed36";
+    font-family: 'boxicons';
+}
+
+#perseverant .logo::before {
+    content: "\f6df";
+    font-family: "Font Awesome 5 Pro";
+}
+
 #php .logo::before {
     content: "\f457";
     font-weight: 900;
@@ -137,4 +162,10 @@ h1+.competence_ligne div h3:hover {
 
 #python .logo::before {
     content: "\f3e2      ";
+}
+
+#travail .logo::before {
+    content: "\f6de";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
 }
