@@ -8,15 +8,15 @@ document.getElementById('qui_suis_je_ecole_titre').querySelectorAll('span')[0].s
 document.getElementById('qui_suis_je_ecole_titre').querySelectorAll('span')[1].style.display = 'none';
 
 function fleche(e) {
-    let fleche = e.querySelectorAll("span");
+    const fleches = e.querySelectorAll('span');
+    const etat = fleches[0].style.display;
     let texte;
     for (let i = 0; i < e.parentNode.childNodes.length; i++) {
         if (e.parentNode.childNodes[i] == e) {
             texte = i + 2;
         }
     }
-    let etat = fleche[0].style.display;
-    fleche[0].style.display = fleche[1].style.display;
-    fleche[1].style.display = etat;
+    fleches[0].style.display = fleches[1].style.display;
+    fleches[1].style.display = etat;
     e.parentNode.childNodes[texte].style.display = etat;
 }

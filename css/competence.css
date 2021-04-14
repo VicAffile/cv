@@ -4,45 +4,63 @@ h1+.competence_ligne {
     margin-bottom: 30px;
 }
 
-h1+.competence_ligne img {
-    width: 45%;
-    height: auto;
+.competence_conteneur {
+    width: 40%;
 }
 
-h1+.competence_ligne div {
+.competence_ligne_competence {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 45%;
+    width: 55%;
 }
 
 h1+.competence_ligne div h3:hover {
     color: white;
 }
 
-h1+.competence_ligne p {
+.competence_ligne_competence p {
     font-size: large;
 }
 
 .competence_ligne {
-    width: 45%;
+    width: 50%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+}
+
+.competence_ligne_info {
+    margin-top: 20px;
     align-items: flex-start;
 }
 
-.competence_ligne img {}
+.competence_ligne_titre {
+    align-items: center;
+}
 
-.competence_ligne li+li {
+.competence_ligne_image {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.competence_ligne_image img {
+    width: 66%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.competence_ligne li {
     font-size: medium;
 }
 
 .competence_ligne ul {
-    width: 40%;
+    display: none;
 }
 
 .logo {
@@ -51,65 +69,72 @@ h1+.competence_ligne p {
 }
 
 .logo::before {
+    margin-left: 5px;
     margin-right: 15px;
-    color: var(--couleur-speciale);
+    font-size: x-large;
 }
 
-.logo span {
+.logo+span {
     font-family: Verdana;
+    font-size: x-large;
     font-weight: bold;
-    color: var(--couleur-speciale);
 }
 
-#algo::before {
+#algo .logo::before {
     content: "\ec3f";
-    font-family: 'boxicons'!important;
+    font-family: 'boxicons';
+}
+
+#competence hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 50%;
 }
 
 #competence ul {
     padding-left: 0px;
 }
 
-#cpp::before {
+#cpp .logo::before {
     content: "\ee70";
-    font-family: 'boxicons'!important;
+    font-family: 'boxicons';
 }
 
-#css::before {
+#css .logo::before {
     content: "\f38b";
 }
 
-#html::before {
+#html .logo::before {
     content: "\f13b";
 }
 
-#java::before {
+#java .logo::before {
     content: "\f4e4";
 }
 
-#js::before {
+#js .logo::before {
     content: "\f3b9";
 }
 
-#math::before {
+#math .logo::before {
     content: "\e977";
-    font-family: 'boxicons'!important;
+    font-family: 'boxicons';
 }
 
-#mysql::before {
+#mysql .logo::before {
     content: "\ecca";
-    font-family: 'boxicons'!important;
+    font-family: 'boxicons';
 }
 
-#nodejs::before {
+#nodejs .logo::before {
     content: "\f419";
 }
 
-#php::before {
+#php .logo::before {
     content: "\f457";
     font-weight: 900;
 }
 
-#python::before {
+#python .logo::before {
     content: "\f3e2      ";
 }

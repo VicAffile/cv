@@ -83,6 +83,24 @@ li {
     font-size: x-large;
 }
 
+@media all and (max-width: 1550px) {
+    #qui_suis_je_texte {
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    #qui_suis_je_texte {
+        width: 87.5%;
+    }
+}
+
+@media all and (max-width: 1050px) {
+    #qui_suis_je_texte {
+        width: 90%;
+    }
+}
+
 @media all and (max-width: 1000px) {
     .zoom {
         width: 80%;

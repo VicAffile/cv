@@ -114,78 +114,104 @@
 
         <h1>Compétences</h1>
 
-        <div class="competence_ligne">
-            <div>
-                <h3>Compétences Informatiques</h3>
-                <p>Voici les compétences que j'ai acquis lors de mon BAC S, de mon Bachelor et sur mon temps personnel :</p>
+        <div class="competence_ligne competence_ligne_titre">
+            <div class="competence_ligne_image">
+                <img src="photo/apres_match.png" alt="poste de travail" />
             </div>
-
-            <img src="photo/IMG_20210316_124913.jpg" alt="poste de travail" />
+            <div class="competence_ligne_competence">
+                <h2>Compétences Professionnelles</h2>
+                <p>Voici les compétences que j'ai acquises au cours de ma vie grâce à mon parcours :</p>
+            </div>
         </div>
 
-        <div class="competence_ligne">
-            <ul>
-                <li id="html" class="logo"><span>HTML 5</span></li>
-                <li>Mise en place de nav-barre et de menu</li>
-                <li>Création de formulaire</li>
-                <li>Création des liens</li>
-                <li>Insertion d'images</li>
-                <li>Organisation du texte</li>
-            </ul>
-
-            <ul>
-                <li id="css" class="logo"><span>CSS 3</span></li>
-                <li>Formater le texte</li>
-                <li>Ajouter des backgrounds et de la couleur</li>
-                <li>Création et manipulation de bordure</li>
-                <li>Création d'apparence dynamique (au survol, click...) </li>
-            </ul>
+        <div class="competence_ligne competence_ligne_info">
+            <div class="competence_conteneur">
+                <div id="algo" onclick="competence_clique(this)"><span class="fleche droite"></span><span class="fleche bas"></span><span class="logo"></span><span>Algorithmique</span></div>
+                <ul></ul>
+            </div>
+            <div class="competence_conteneur">
+                <div id="math" onclick="competence_clique(this)"><span class="fleche droite"></span><span class="fleche bas"></span><span class="logo"></span><span>Mathématiques</span></div>
+                <ul></ul>
+            </div>
         </div>
 
-        <div class="competence_ligne">
-            <ul>
-                <li id="js" class="logo"><span>JavaScript</span></li>
-            </ul>
+        <hr />
 
-            <ul>
-                <li id="nodejs" class="logo"><span>NodeJS</span></li>
-            </ul>
+        <div class="competence_ligne competence_ligne_titre">
+            <div class="competence_ligne_competence">
+                <h2>Langages Informatiques</h2>
+                <p>Voici les compétences que j'ai acquises lors de mon Bachelor et sur mon temps personnel :</p>
+            </div>
+            <div class="competence_ligne_image">
+                <img src="photo/iot.jpg" alt="poste de travail" />
+            </div>
+        </div>
+        <br />
+        <div class="competence_ligne competence_ligne_info">
+            <div class="competence_conteneur">
+                <div id="html" onclick="competence_clique(this)"><span class="fleche droite"></span><span class="fleche bas"></span><span class="logo"></span><span>HTML 5</span></div>
+                <ul>
+                    <li>Mise en place de nav-barre et de menu</li>
+                    <li>Création de formulaire</li>
+                    <li>Création des liens</li>
+                    <li>Insertion d'images</li>
+                    <li>Organisation du texte</li>
+                </ul>
+            </div>
+            <div class="competence_conteneur">
+                <div id="css" onclick="competence_clique(this)"><span class="fleche droite"></span><span class="fleche bas"></span><span class="logo"></span><span>CSS 3</span></div>
+                <ul>
+                    <li>Formater le texte</li>
+                    <li>Ajouter des backgrounds et de la couleur</li>
+                    <li>Création et manipulation de bordure</li>
+                    <li>Création d'apparence dynamique (au survol, click...) </li>
+                </ul>
+            </div>
         </div>
 
-        <div class="competence_ligne">
-            <ul>
-                <li id="php" class="logo"><span>PHP</span></li>
-            </ul>
-
-            <ul>
-                <li id="mysql" class="logo"><span>MySQL</span></li>
-            </ul>
+        <div class="competence_ligne competence_ligne_info">
+            <div class="competence_conteneur">
+                <div id="js" onclick="competence_clique(this)"><span class="fleche droite"></span><span class="fleche bas"></span><span class="logo"></span><span>JavaScript</span></div>
+                <ul>
+                    <li>Manipulation du DOM</li>
+                    <li>Programation orienté objet</li>
+                    <li>Promesses</li>
+                    <li>Fonction synchrones/asynchrones</li>
+                </ul>
+            </div>
+            <div class="competence_conteneur">
+                <div id="nodejs" onclick="competence_clique(this)"><span class="fleche droite"></span><span class="fleche bas"></span><span class="logo"></span><span>NodeJS</span></div>
+                <ul></ul>
+            </div>
         </div>
 
-        <div class="competence_ligne">
-            <ul>
-                <li id="cpp" class="logo"><span>C/C++</span></li>
-            </ul>
-
-            <ul>
-                <li id="java" class="logo"><span>Java</span></li>
-            </ul>
+        <div class="competence_ligne competence_ligne_info">
+            <div class="competence_conteneur">
+                <div id="php" onclick="competence_clique(this)"><span class="fleche droite"></span><span class="fleche bas"></span><span class="logo"></span><span>PHP</span></div>
+                <ul></ul>
+            </div>
+            <div class="competence_conteneur">
+                <div id="mysql" onclick="competence_clique(this)"><span class="fleche droite"></span><span class="fleche bas"></span><span class="logo"></span><span>MySql</span></div>
+                <ul></ul>
+            </div>
         </div>
 
-        <div class="competence_ligne">
-            <ul>
-                <li id="algo" class="logo"><span>Algorithmique</span></li>
-            </ul>
-
-            <ul>
-                <li id="math" class="logo"><span>Mathématiques</span></li>
-            </ul>
+        <div class="competence_ligne competence_ligne_info">
+            <div class="competence_conteneur">
+                <div id="cpp" onclick="competence_clique(this)"><span class="fleche droite"></span><span class="fleche bas"></span><span class="logo"></span><span>C/C++</span></div>
+                <ul></ul>
+            </div>
+            <div class="competence_conteneur">
+                <div id="java" onclick="competence_clique(this)"><span class="fleche droite"></span><span class="fleche bas"></span><span class="logo"></span><span>Java</span></div>
+                <ul></ul>
+            </div>
         </div>
 
-        <div class="competence_ligne">
-            <ul>
-                <li id="python" class="logo"><span>Python</span></li>
-            </ul>
+        <div class="competence_ligne competence_ligne_info">
+            <div class="competence_conteneur">
+                <div id="python" onclick="competence_clique(this)"><span class="fleche droite"></span><span class="fleche bas"></span><span class="logo"></span><span>Python</span></div>
+                <ul></ul>
+            </div>
         </div>
 
     </section>
@@ -402,6 +428,7 @@
 
     <script src="js/main.js"></script>
     <script src="js/qui_suis_je.js"></script>
+    <script src="js/competence.js"></script>
 
 </body>
 
