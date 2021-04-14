@@ -41,6 +41,41 @@ a:hover {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
+}
+
+#menu::before {
+    content: "\f0c9";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+}
+
+#menu_bordure {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: solid white 2px;
+    border-radius: 10%;
+}
+
+#menu_conteneur {
+    display: none;
+}
+
+@media all and (max-width: 810px) {
+    #etiquette {
+        transition: 0.5s;
+        position: fixed;
+        top: 100px;
+        width: 160px;
+        border: solid white 2px;
+        border-radius: 10px 0px 0px 10px;
+        background-color: var(--couleur-header);
+    }
+    #menu_conteneur {
+        display: contents;
+    }
 }
