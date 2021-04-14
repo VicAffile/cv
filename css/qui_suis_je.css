@@ -14,6 +14,10 @@ li {
     font-family: 'boxicons';
 }
 
+.qui_suis_je_contenu {
+    transition: 0.5s;
+}
+
 .qui_suis_je_titre {
     padding: 5px;
     border-radius: 10px;
@@ -54,22 +58,6 @@ li {
     width: 100%;
     height: auto;
     object-fit: contain;
-}
-
-#qui_suis_je_ecole_contenu {
-    display: none;
-}
-
-#qui_suis_je_presentation_contenu {
-    display: none;
-}
-
-#qui_suis_je_passion_contenu {
-    display: none;
-}
-
-#qui_suis_je_job_contenu {
-    display: none;
 }
 
 #qui_suis_je_texte {
