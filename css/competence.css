@@ -61,10 +61,6 @@ h1+.competence_ligne div h3:hover {
     font-size: medium;
 }
 
-.competence_ligne ul {
-    display: none;
-}
-
 .logo {
     list-style-type: none;
     font-family: "Font Awesome 5 Brands";

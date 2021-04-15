@@ -78,21 +78,21 @@
             </div>
         </div>
         <div id="qui_suis_je_texte">
-            <h2 id="qui_suis_je_presentation_titre" class="qui_suis_je_titre" onclick="fleche(this)"><span class="fleche droite" style="display: contents;"></span><span class="fleche bas" style="display: none;"></span>Je me présente</h2>
+            <h2 id="qui_suis_je_presentation_titre" class="qui_suis_je_titre" onclick="qui_suis_je_afficher_texte(this)"><span class="fleche droite" style="display: contents;"></span><span class="fleche bas" style="display: none;"></span>Je me présente</h2>
             <p class="qui_suis_je_contenu" style="display: none;">
                 Âgé de <span id="age"></span> ans, j'alterne entre Nantes et Guérande. Je suis étudiant en 2ème année dans la filière Ingénieurie Informatique à YNOV Campus Nantes. Bien que je ne me spécialise pas avant ma 3ème année, je suis bien plus
                 axé développement que réseaux.
             </p>
-            <h2 id="qui_suis_je_passion_titre" class="qui_suis_je_titre" onclick="fleche(this)"><span class="fleche droite" style="display: contents;"></span><span class="fleche bas" style="display: none;"></span>Mes passions</h2>
+            <h2 id="qui_suis_je_passion_titre" class="qui_suis_je_titre" onclick="qui_suis_je_afficher_texte(this)"><span class="fleche droite" style="display: contents;"></span><span class="fleche bas" style="display: none;"></span>Mes passions</h2>
             <p class="qui_suis_je_contenu" style="display: none;">
                 L'une de mes passions est le tennis, que je pratique en compétiton. Autrefois classé 4/6, je suis aujourd'hui classé 5/6 et je joue pour le Tennis Club de Guérande. Je suis également passioné par les mangas, surtout les shonens et les seinens. Ma collection
                 s'élève à ce jour à 877 exemplaires (j'en suis plutôt fier ^^). J'aime aussi beacoup l'humour : je vais assister à des spectacles (bon en ce moment c'est pas trop possible mais booon) et je regarde beaucoup de sketchs.
             </p>
-            <h2 id="qui_suis_je_job_titre" class="qui_suis_je_titre" onclick="fleche(this)"><span class="fleche droite" style="display: contents;"></span><span class="fleche bas" style="display: none;"></span>Mes jobs actuels</h2>
+            <h2 id="qui_suis_je_job_titre" class="qui_suis_je_titre" onclick="qui_suis_je_afficher_texte(this)"><span class="fleche droite" style="display: contents;"></span><span class="fleche bas" style="display: none;"></span>Mes jobs actuels</h2>
             <p class="qui_suis_je_contenu" style="display: none;">
                 En parallèle de mes études je travaille comme caissier à l'Intermarché de Pornichet et comme déballeur/remballeur au marché de La Baule.
             </p>
-            <h2 id="qui_suis_je_ecole_titre" class="qui_suis_je_titre" onclick="fleche(this)"><span class="fleche droite" style="display: contents;"></span><span class="fleche bas" style="display: none;"></span>Mon école et ma formation</h2>
+            <h2 id="qui_suis_je_ecole_titre" class="qui_suis_je_titre" onclick="qui_suis_je_afficher_texte(this)"><span class="fleche droite" style="display: contents;"></span><span class="fleche bas" style="display: none;"></span>Mon école et ma formation</h2>
             <div class="qui_suis_je_contenu" style="display: none;">
                 <div>
                     <p class="gras">
@@ -132,42 +132,42 @@
 
         <div class="competence_ligne competence_ligne_info">
             <div class="competence_conteneur">
-                <div id="passion" onclick="competence_clique(this)"><span class="fleche droite"></span><span class="fleche bas"></span><span class="logo"></span><span>Passion</span></div>
-                <ul></ul>
+                <div id="passion" onclick="competence_afficher_texte(this)"><span class="fleche droite" style="display: contents;"></span><span class="fleche bas" style="display: none;"></span><span class="logo"></span><span>Passion</span></div>
+                <ul style="display: none;"></ul>
             </div>
             <div class="competence_conteneur">
-                <div id="energique" onclick="competence_clique(this)"><span class="fleche droite"></span><span class="fleche bas"></span><span class="logo"></span><span>Energique</span></div>
-                <ul></ul>
-            </div>
-        </div>
-        <div class="competence_ligne competence_ligne_info">
-            <div class="competence_conteneur">
-                <div id="humour" onclick="competence_clique(this)"><span class="fleche droite"></span><span class="fleche bas"></span><span class="logo"></span><span>Humour</span></div>
-                <ul></ul>
-            </div>
-            <div class="competence_conteneur">
-                <div id="perseverant" onclick="competence_clique(this)"><span class="fleche droite"></span><span class="fleche bas"></span><span class="logo"></span><span>Persévérant</span></div>
-                <ul></ul>
+                <div id="energique" onclick="competence_afficher_texte(this)"><span class="fleche droite" style="display: contents;"></span><span class="fleche bas" style="display: none;"></span></span><span class="logo"></span><span>Energique</span></div>
+                <ul style="display: none;"></ul>
             </div>
         </div>
         <div class="competence_ligne competence_ligne_info">
             <div class="competence_conteneur">
-                <div id="travail" onclick="competence_clique(this)"><span class="fleche droite"></span><span class="fleche bas"></span><span class="logo"></span><span>Travailleur</span></div>
-                <ul></ul>
+                <div id="humour" onclick="competence_afficher_texte(this)"><span class="fleche droite" style="display: contents;"></span><span class="fleche bas" style="display: none;"></span><span class="logo"></span><span>Humour</span></div>
+                <ul style="display: none;"></ul>
             </div>
             <div class="competence_conteneur">
-                <div id="initiative" onclick="competence_clique(this)"><span class="fleche droite"></span><span class="fleche bas"></span><span class="logo"></span><span>Esprit d'initiative</span></div>
-                <ul></ul>
+                <div id="perseverant" onclick="competence_afficher_texte(this)"><span class="fleche droite" style="display: contents;"></span><span class="fleche bas" style="display: none;"></span><span class="logo"></span><span>Persévérant</span></div>
+                <ul style="display: none;"></ul>
             </div>
         </div>
         <div class="competence_ligne competence_ligne_info">
             <div class="competence_conteneur">
-                <div id="algo" onclick="competence_clique(this)"><span class="fleche droite"></span><span class="fleche bas"></span><span class="logo"></span><span>Algorithmique</span></div>
-                <ul></ul>
+                <div id="travail" onclick="competence_afficher_texte(this)"><span class="fleche droite" style="display: contents;"></span><span class="fleche bas" style="display: none;"></span><span class="logo"></span><span>Travailleur</span></div>
+                <ul style="display: none;"></ul>
             </div>
             <div class="competence_conteneur">
-                <div id="math" onclick="competence_clique(this)"><span class="fleche droite"></span><span class="fleche bas"></span><span class="logo"></span><span>Mathématiques</span></div>
-                <ul></ul>
+                <div id="initiative" onclick="competence_afficher_texte(this)"><span class="fleche droite" style="display: contents;"></span><span class="fleche bas" style="display: none;"></span><span class="logo"></span><span>Esprit d'initiative</span></div>
+                <ul style="display: none;"></ul>
+            </div>
+        </div>
+        <div class="competence_ligne competence_ligne_info">
+            <div class="competence_conteneur">
+                <div id="algo" onclick="competence_afficher_texte(this)"><span class="fleche droite" style="display: contents;"></span><span class="fleche bas" style="display: none;"></span><span class="logo"></span><span>Algorithmique</span></div>
+                <ul style="display: none;"></ul>
+            </div>
+            <div class="competence_conteneur">
+                <div id="math" onclick="competence_afficher_texte(this)"><span class="fleche droite" style="display: contents;"></span><span class="fleche bas" style="display: none;"></span><span class="logo"></span><span>Mathématiques</span></div>
+                <ul style="display: none;"></ul>
             </div>
         </div>
 
@@ -185,8 +185,8 @@
         <br />
         <div class="competence_ligne competence_ligne_info">
             <div class="competence_conteneur">
-                <div id="html" onclick="competence_clique(this)"><span class="fleche droite"></span><span class="fleche bas"></span><span class="logo"></span><span>HTML 5</span></div>
-                <ul>
+                <div id="html" onclick="competence_afficher_texte(this)"><span class="fleche droite" style="display: contents;"></span><span class="fleche bas" style="display: none;"></span><span class="logo"></span><span>HTML 5</span></div>
+                <ul style="display: none;">
                     <li>Mise en place de nav-barre et de menu</li>
                     <li>Création de formulaire</li>
                     <li>Création des liens</li>
@@ -195,8 +195,8 @@
                 </ul>
             </div>
             <div class="competence_conteneur">
-                <div id="css" onclick="competence_clique(this)"><span class="fleche droite"></span><span class="fleche bas"></span><span class="logo"></span><span>CSS 3</span></div>
-                <ul>
+                <div id="css" onclick="competence_afficher_texte(this)"><span class="fleche droite" style="display: contents;"></span><span class="fleche bas" style="display: none;"></span><span class="logo"></span><span>CSS 3</span></div>
+                <ul style="display: none;">
                     <li>Formater le texte</li>
                     <li>Ajouter des backgrounds et de la couleur</li>
                     <li>Création et manipulation de bordure</li>
@@ -207,8 +207,8 @@
 
         <div class="competence_ligne competence_ligne_info">
             <div class="competence_conteneur">
-                <div id="js" onclick="competence_clique(this)"><span class="fleche droite"></span><span class="fleche bas"></span><span class="logo"></span><span>JavaScript</span></div>
-                <ul>
+                <div id="js" onclick="competence_afficher_texte(this)"><span class="fleche droite" style="display: contents;"></span><span class="fleche bas" style="display: none;"></span><span class="logo"></span><span>JavaScript</span></div>
+                <ul style="display: none;">
                     <li>Manipulation du DOM</li>
                     <li>Programation orienté objet</li>
                     <li>Promesses</li>
@@ -216,37 +216,37 @@
                 </ul>
             </div>
             <div class="competence_conteneur">
-                <div id="nodejs" onclick="competence_clique(this)"><span class="fleche droite"></span><span class="fleche bas"></span><span class="logo"></span><span>NodeJS</span></div>
-                <ul></ul>
+                <div id="nodejs" onclick="competence_afficher_texte(this)"><span class="fleche droite" style="display: contents;"></span><span class="fleche bas" style="display: none;"></span><span class="logo"></span><span>NodeJS</span></div>
+                <ul style="display: none;"></ul>
             </div>
         </div>
 
         <div class="competence_ligne competence_ligne_info">
             <div class="competence_conteneur">
-                <div id="php" onclick="competence_clique(this)"><span class="fleche droite"></span><span class="fleche bas"></span><span class="logo"></span><span>PHP</span></div>
-                <ul></ul>
+                <div id="php" onclick="competence_afficher_texte(this)"><span class="fleche droite" style="display: contents;"></span><span class="fleche bas" style="display: none;"></span><span class="logo"></span><span>PHP</span></div>
+                <ul style="display: none;"></ul>
             </div>
             <div class="competence_conteneur">
-                <div id="mysql" onclick="competence_clique(this)"><span class="fleche droite"></span><span class="fleche bas"></span><span class="logo"></span><span>MySql</span></div>
-                <ul></ul>
-            </div>
-        </div>
-
-        <div class="competence_ligne competence_ligne_info">
-            <div class="competence_conteneur">
-                <div id="cpp" onclick="competence_clique(this)"><span class="fleche droite"></span><span class="fleche bas"></span><span class="logo"></span><span>C/C++</span></div>
-                <ul></ul>
-            </div>
-            <div class="competence_conteneur">
-                <div id="java" onclick="competence_clique(this)"><span class="fleche droite"></span><span class="fleche bas"></span><span class="logo"></span><span>Java</span></div>
-                <ul></ul>
+                <div id="mysql" onclick="competence_afficher_texte(this)"><span class="fleche droite" style="display: contents;"></span><span class="fleche bas" style="display: none;"></span><span class="logo"></span><span>MySql</span></div>
+                <ul style="display: none;"></ul>
             </div>
         </div>
 
         <div class="competence_ligne competence_ligne_info">
             <div class="competence_conteneur">
-                <div id="python" onclick="competence_clique(this)"><span class="fleche droite"></span><span class="fleche bas"></span><span class="logo"></span><span>Python</span></div>
-                <ul></ul>
+                <div id="cpp" onclick="competence_afficher_texte(this)"><span class="fleche droite" style="display: contents;"></span><span class="fleche bas" style="display: none;"></span><span class="logo"></span><span>C/C++</span></div>
+                <ul style="display: none;"></ul>
+            </div>
+            <div class="competence_conteneur">
+                <div id="java" onclick="competence_afficher_texte(this)"><span class="fleche droite" style="display: contents;"></span><span class="fleche bas" style="display: none;"></span><span class="logo"></span><span>Java</span></div>
+                <ul style="display: none;"></ul>
+            </div>
+        </div>
+
+        <div class="competence_ligne competence_ligne_info">
+            <div class="competence_conteneur">
+                <div id="python" onclick="competence_afficher_texte(this)"><span class="fleche droite" style="display: contents;"></span><span class="fleche bas" style="display: none;"></span><span class="logo"></span><span>Python</span></div>
+                <ul style="display: none;"></ul>
             </div>
         </div>
 

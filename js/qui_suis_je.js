@@ -3,7 +3,7 @@ const date_de_naissance = new Date(2000, 3, 1);
 const date_actuel = new Date();
 document.getElementById('age').textContent = Math.trunc(date_actuel.getFullYear() - date_de_naissance.getFullYear() + (date_actuel.getMonth() - date_de_naissance.getMonth()) / 11);
 
-function fleche(e) {
+function qui_suis_je_afficher_texte(e) {
     const fleches = e.querySelectorAll('span');
     const etat = fleches[0].style.display;
     let texte;
