@@ -1,3 +1,5 @@
+const date_actuel = new Date();
+
 function envoi() {
     let identite = document.getElementById("identite").value;
     let adresse_email = document.getElementById("adresse_email").value;

@@ -34,18 +34,20 @@
 
 .experience:hover .experience_image {
     transition: 0.5s;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 .experience_details {
     z-index: 1;
-    padding: 10px;
-    width: 100%;
-    height: auto;
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 1;
+}
+
+.experience_details p {
+    padding: 2%;
+    width: 96%;
 }
 
 .experience:hover .experience_details {
