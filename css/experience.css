@@ -86,3 +86,9 @@
         grid-template-rows: repeat(6, 339px);
     }
 }
+
+@media all and (max-width: 400px) {
+    .experience_details {
+        font-size: medium;
+    }
+}
