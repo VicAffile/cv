@@ -5,7 +5,22 @@ h1+.competence_ligne {
 }
 
 .competence_conteneur {
+    padding: 10px;
     width: 40%;
+    border-radius: 10px;
+    background-color: var(--couleur-conteneur);
+}
+
+.competence_conteneur li::marker {
+    content: none;
+}
+
+.competence_conteneur:hover .logo {
+    color: var(--couleur-speciale);
+}
+
+.competence_conteneur:hover .logo+span {
+    color: var(--couleur-speciale);
 }
 
 .competence_ligne_competence {

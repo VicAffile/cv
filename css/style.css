@@ -1,7 +1,7 @@
 body {
     background-color: var(--couleur-fond);
     color: white;
-    font-family: Verdana;
+    font-family: Helvetica;
 }
 
 div+p {
@@ -50,7 +50,7 @@ section h1 {
 :root {
     --couleur-speciale: red;
     --couleur-fond: rgba(0, 0, 0, 0.9);
-    --couleur-header: rgba(0, 0, 0, 0.6);
+    --couleur-header: rgba(0, 0, 0, 0.8);
     --couleur-form: rgba(0, 0, 0, 0.4);
     --couleur-conteneur: rgba(0, 0, 0, 0.4);
 }
