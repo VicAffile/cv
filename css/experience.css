@@ -34,7 +34,7 @@
 
 .experience:hover .experience_image {
     transition: 0.5s;
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 .experience_details {

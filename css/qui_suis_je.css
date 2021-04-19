@@ -126,3 +126,15 @@ li {
         width: 100%;
     }
 }
+
+@media all and (max-width: 450px) {
+    #qui_suis_je_texte h2 {
+        font-size: x-large;
+    }
+}
+
+@media all and (max-width: 400px) {
+    #qui_suis_je_texte h2 {
+        text-align: left;
+    }
+}

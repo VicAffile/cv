@@ -56,6 +56,7 @@ h1+.competence_ligne div h3:hover {
 
 .competence_ligne_titre {
     width: 50%;
+    font-size: x-large;
     align-items: center;
 }
 
