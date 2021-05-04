@@ -461,10 +461,13 @@ body {
         }
         &#experience {
             #experience_grid {
-                display: grid;
-                grid-template-columns: repeat(3, 370px);
-                grid-template-rows: repeat(2, 339px);
+                width: 70%;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
                 .experience {
+                    width: 370px;
+                    height: 339px;
                     padding: 10px;
                     border-radius: 10px;
                     display: grid;
@@ -528,13 +531,14 @@ body {
                         grid-row-end: 1;
                     }
                 }
-                @media all and (max-width: 1200px) and (min-width: 830px) {
-                    grid-template-columns: repeat(2, 370px);
-                    grid-template-rows: repeat(3, 339px);
+                @media all and (max-width: 1700px) {
+                    width: 80%;
                 }
-                @media all and (max-width: 830px) {
-                    grid-template-columns: repeat(1, 370px);
-                    grid-template-rows: repeat(6, 339px);
+                @media all and (max-width: 1500px) {
+                    width: 90%;
+                }
+                @media all and (max-width: 1500px) {
+                    width: 100%;
                 }
             }
         }
