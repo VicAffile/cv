@@ -880,6 +880,15 @@ body .article#projet #projet_grid .projet_conteneur .projet {
   grid-column-gap: 25px;
 }
 
+body .article#projet #projet_grid .projet_conteneur .projet a {
+  text-decoration: none;
+  color: white;
+}
+
+body .article#projet #projet_grid .projet_conteneur .projet a:visited {
+  color: white;
+}
+
 body .article#projet #projet_grid .projet_conteneur .projet a:hover {
   color: var(--couleur-speciale);
   text-decoration: underline;
@@ -982,6 +991,13 @@ body .article#projet #projet_grid .projet_conteneur .projet .projet_contenu p {
   margin: 0px;
 }
 
+body .article#projet #projet_grid .projet_conteneur .projet .projet_contenu p.projet_git {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 @media all and (max-width: 790px) {
   body .article#projet #projet_grid .projet_conteneur .projet .projet_contenu {
     -ms-grid-column: 1;
@@ -1026,13 +1042,8 @@ body .article#projet #projet_grid .projet_conteneur .projet .projet_decriptif {
 }
 
 body .article#projet #projet_grid .projet_conteneur .projet .projet_decriptif p {
-  margin: 0;
-  width: 40;
-}
-
-body .article#projet #projet_grid .projet_conteneur .projet .projet_decriptif .projet_git {
-  width: 100%;
-  text-align: center;
+  margin: 0px;
+  width: 40px;
 }
 
 @media all and (max-width: 790px) {
@@ -1072,201 +1083,7 @@ body .article#projet #projet_grid .projet_conteneur:hover .projet_decriptif {
   }
 }
 
-body .article#contact #contact_flex {
-  width: 70%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body .article#contact #contact_flex #contact_image {
-  width: 25%;
-  height: 100%;
-}
-
-body .article#contact #contact_flex #contact_image img {
-  width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-@media all and (max-width: 1200px) {
-  body .article#contact #contact_flex #contact_image {
-    display: none;
-  }
-}
-
-body .article#contact #contact_flex #contact_contenu_flex {
-  width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body .article#contact #contact_flex #contact_contenu_flex form {
-  width: 100%;
-  border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: Helvetica;
-}
-
-body .article#contact #contact_flex #contact_contenu_flex form .input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body .article#contact #contact_flex #contact_contenu_flex form .input div + div {
-  margin-top: 10%;
-}
-
-body .article#contact #contact_flex #contact_contenu_flex form .input .bordure {
-  padding: 5px;
-  border-radius: 10px;
-}
-
-body .article#contact #contact_flex #contact_contenu_flex form .input .bordure input {
-  padding: 5px;
-  height: 30px;
-  border: solid white 2px;
-  border-radius: 10px;
-  background-color: var(--couleur-form);
-  color: white;
-  font-size: large;
-}
-
-body .article#contact #contact_flex #contact_contenu_flex form .input .bordure input:focus {
-  outline: none;
-  border-color: red;
-  background-color: white;
-  color: black;
-}
-
-body .article#contact #contact_flex #contact_contenu_flex form .input .bordure:hover {
-  background-color: rgba(255, 0, 0, 0.4);
-}
-
-body .article#contact #contact_flex #contact_contenu_flex form .input .bordure:hover input {
-  border-color: red;
-}
-
-body .article#contact #contact_flex #contact_contenu_flex form .bordure {
-  padding: 5px;
-  border-radius: 10px;
-}
-
-body .article#contact #contact_flex #contact_contenu_flex form .bordure textarea {
-  padding: 5px;
-  width: 300px;
-  height: 200px;
-  border: solid white 2px;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.4);
-  color: white;
-  font-size: large;
-  text-align: justify;
-}
-
-body .article#contact #contact_flex #contact_contenu_flex form .bordure textarea:focus {
-  outline: none;
-  border-color: red;
-  background-color: white;
-  color: black;
-}
-
-body .article#contact #contact_flex #contact_contenu_flex form .bordure:hover {
-  background-color: rgba(255, 0, 0, 0.4);
-}
-
-body .article#contact #contact_flex #contact_contenu_flex form .bordure:hover textarea {
-  border-color: red;
-}
-
-@media all and (max-width: 670px) {
-  body .article#contact #contact_flex #contact_contenu_flex form {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  body .article#contact #contact_flex #contact_contenu_flex form .input + .bordure {
-    margin-top: 5%;
-  }
-}
-
-body .article#contact #contact_flex #contact_contenu_flex button {
-  margin-top: 5%;
-  width: 200px;
-  padding: 10px;
-  border: solid var(--couleur-speciale) 2px;
-  border-radius: 10px;
-  background-color: var(--couleur-form);
-  font-size: large;
-  color: var(--couleur-speciale);
-}
-
-body .article#contact #contact_flex #contact_contenu_flex button:active {
-  width: 180px;
-}
-
-body .article#contact #contact_flex #contact_contenu_flex button:focus {
-  outline: none;
-}
-
-body .article#contact #contact_flex #contact_contenu_flex button:hover {
-  background-color: var(--couleur-speciale);
-  color: white;
-}
-
-body .article#contact #contact_flex #contact_contenu_flex #reseau {
-  margin-top: 5%;
+body .article#contact #reseau {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1285,7 +1102,11 @@ body .article#contact #contact_flex #contact_contenu_flex #reseau {
           align-items: center;
 }
 
-body .article#contact #contact_flex #contact_contenu_flex #reseau div {
+body .article#contact #reseau p {
+  font-size: x-large;
+}
+
+body .article#contact #reseau div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1303,56 +1124,54 @@ body .article#contact #contact_flex #contact_contenu_flex #reseau div {
           align-items: flex-start;
 }
 
-body .article#contact #contact_flex #contact_contenu_flex #reseau div a {
+body .article#contact #reseau div a {
+  text-decoration: none;
+  color: white;
   margin-left: 20px;
 }
 
-body .article#contact #contact_flex #contact_contenu_flex #reseau div a#facebook {
+body .article#contact #reseau div a#facebook {
   font-family: "Font Awesome 5 Brands";
   font-size: xx-large;
 }
 
-body .article#contact #contact_flex #contact_contenu_flex #reseau div a#facebook::before {
+body .article#contact #reseau div a#facebook::before {
   content: "\f09a";
 }
 
-body .article#contact #contact_flex #contact_contenu_flex #reseau div a#git {
+body .article#contact #reseau div a#git {
   font-family: "Font Awesome 5 Brands";
   font-size: xx-large;
 }
 
-body .article#contact #contact_flex #contact_contenu_flex #reseau div a#git::before {
+body .article#contact #reseau div a#git::before {
   content: "\f092";
 }
 
-body .article#contact #contact_flex #contact_contenu_flex #reseau div a#instagram {
+body .article#contact #reseau div a#instagram {
   font-family: "Font Awesome 5 Brands";
   font-size: xx-large;
 }
 
-body .article#contact #contact_flex #contact_contenu_flex #reseau div a#instagram::before {
+body .article#contact #reseau div a#instagram::before {
   content: "\f16d";
 }
 
-body .article#contact #contact_flex #contact_contenu_flex #reseau div a#linkedin {
+body .article#contact #reseau div a#linkedin {
   font-family: "Font Awesome 5 Brands";
   font-size: xx-large;
 }
 
-body .article#contact #contact_flex #contact_contenu_flex #reseau div a#linkedin::before {
+body .article#contact #reseau div a#linkedin::before {
   content: "\f0e1";
 }
 
-@media all and (max-width: 1200px) {
-  body .article#contact #contact_flex #contact_contenu_flex {
-    width: 100%;
-  }
+body .article#contact #reseau div a:visited {
+  color: white;
 }
 
-@media all and (max-width: 880px) {
-  body .article#contact #contact_flex {
-    width: 90%;
-  }
+body .article#contact #reseau div a:hover {
+  color: var(--couleur-speciale);
 }
 
 body .couleur_speciale {

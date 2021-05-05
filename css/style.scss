@@ -558,6 +558,13 @@ body {
                         grid-template-columns: 300px 325px;
                         grid-auto-rows: 180px;
                         grid-column-gap: 25px;
+                        a {
+                            text-decoration: none;
+                            color: white;
+                        }
+                        a:visited {
+                            color: white;
+                        }
                         a:hover {
                             color: var(--couleur-speciale);
                             text-decoration: underline;
@@ -621,6 +628,10 @@ body {
                             p {
                                 font-size: large;
                                 margin: 0px;
+                                &.projet_git {
+                                    text-align: center;
+                                    align-self: center;
+                                }
                             }
                             @media all and (max-width: 790px) {
                                 grid-column-start: 1;
@@ -647,12 +658,8 @@ body {
                             justify-content: space-between;
                             align-items: flex-start;
                             p {
-                                margin: 0;
-                                width: 40;
-                            }
-                            .projet_git {
-                                width: 100%;
-                                text-align: center;
+                                margin: 0px;
+                                width: 40px;
                             }
                         }
                         @media all and (max-width: 790px) {
@@ -683,183 +690,61 @@ body {
             }
         }
         &#contact {
-            #contact_flex {
-                width: 70%;
+            #reseau {
+                width: 100%;
                 display: flex;
                 flex-direction: row;
                 flex-wrap: nowrap;
-                justify-content: space-around;
+                justify-content: center;
                 align-items: center;
-                #contact_image {
-                    width: 25%;
-                    height: 100%;
-                    img {
-                        width: 100%;
-                        height: auto;
-                        object-fit: cover;
-                    }
-                    @media all and (max-width: 1200px) {
-                        display: none;
-                    }
+                p {
+                    font-size: x-large;
                 }
-                #contact_contenu_flex {
-                    width: 60%;
+                div {
                     display: flex;
-                    flex-direction: column;
+                    flex-direction: row;
                     flex-wrap: nowrap;
-                    justify-content: space-around;
-                    align-items: center;
-                    form {
-                        width: 100%;
-                        border-radius: 10px;
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: nowrap;
-                        justify-content: space-around;
-                        align-items: center;
-                        font-family: Helvetica;
-                        .input {
-                            display: flex;
-                            flex-direction: column;
-                            flex-wrap: nowrap;
-                            justify-content: space-around;
-                            align-items: center;
-                            div+div {
-                                margin-top: 10%;
-                            }
-                            .bordure {
-                                padding: 5px;
-                                border-radius: 10px;
-                                input {
-                                    padding: 5px;
-                                    height: 30px;
-                                    border: solid white 2px;
-                                    border-radius: 10px;
-                                    background-color: var(--couleur-form);
-                                    color: white;
-                                    font-size: large;
-                                }
-                                input:focus {
-                                    outline: none;
-                                    border-color: rgba(255, 0, 0, 1);
-                                    background-color: white;
-                                    color: black;
-                                }
-                            }
-                            .bordure:hover {
-                                background-color: rgba(255, 0, 0, 0.4);
-                                input {
-                                    border-color: rgba(255, 0, 0, 1);
-                                }
-                            }
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        margin-left: 20px;
+                        &#facebook {
+                            font-family: "Font Awesome 5 Brands";
+                            font-size: xx-large;
                         }
-                        .bordure {
-                            padding: 5px;
-                            border-radius: 10px;
-                            textarea {
-                                padding: 5px;
-                                width: 300px;
-                                height: 200px;
-                                border: solid white 2px;
-                                border-radius: 10px;
-                                background-color: rgba(0, 0, 0, 0.4);
-                                color: white;
-                                font-size: large;
-                                text-align: justify;
-                            }
-                            textarea:focus {
-                                outline: none;
-                                border-color: rgba(255, 0, 0, 1);
-                                background-color: white;
-                                color: black;
-                            }
+                        &#facebook::before {
+                            content: "\f09a";
                         }
-                        .bordure:hover {
-                            background-color: rgba(255, 0, 0, 0.4);
-                            textarea {
-                                border-color: rgba(255, 0, 0, 1);
-                            }
+                        &#git {
+                            font-family: "Font Awesome 5 Brands";
+                            font-size: xx-large;
                         }
-                        @media all and (max-width: 670px) {
-                            flex-direction: column;
-                            .input+.bordure {
-                                margin-top: 5%;
-                            }
+                        &#git::before {
+                            content: "\f092";
+                        }
+                        &#instagram {
+                            font-family: "Font Awesome 5 Brands";
+                            font-size: xx-large;
+                        }
+                        &#instagram::before {
+                            content: "\f16d";
+                        }
+                        &#linkedin {
+                            font-family: "Font Awesome 5 Brands";
+                            font-size: xx-large;
+                        }
+                        &#linkedin::before {
+                            content: "\f0e1";
                         }
                     }
-                    button {
-                        margin-top: 5%;
-                        width: 200px;
-                        padding: 10px;
-                        border: solid var(--couleur-speciale) 2px;
-                        border-radius: 10px;
-                        background-color: var(--couleur-form);
-                        font-size: large;
-                        color: var(--couleur-speciale);
-                    }
-                    button:active {
-                        width: 180px;
-                    }
-                    button:focus {
-                        outline: none;
-                    }
-                    button:hover {
-                        background-color: var(--couleur-speciale);
+                    a:visited {
                         color: white;
                     }
-                    #reseau {
-                        margin-top: 5%;
-                        width: 100%;
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: nowrap;
-                        justify-content: center;
-                        align-items: center;
-                        div {
-                            display: flex;
-                            flex-direction: row;
-                            flex-wrap: nowrap;
-                            justify-content: space-between;
-                            align-items: flex-start;
-                            a {
-                                margin-left: 20px;
-                                &#facebook {
-                                    font-family: "Font Awesome 5 Brands";
-                                    font-size: xx-large;
-                                }
-                                &#facebook::before {
-                                    content: "\f09a";
-                                }
-                                &#git {
-                                    font-family: "Font Awesome 5 Brands";
-                                    font-size: xx-large;
-                                }
-                                &#git::before {
-                                    content: "\f092";
-                                }
-                                &#instagram {
-                                    font-family: "Font Awesome 5 Brands";
-                                    font-size: xx-large;
-                                }
-                                &#instagram::before {
-                                    content: "\f16d";
-                                }
-                                &#linkedin {
-                                    font-family: "Font Awesome 5 Brands";
-                                    font-size: xx-large;
-                                }
-                                &#linkedin::before {
-                                    content: "\f0e1";
-                                }
-                            }
-                        }
+                    a:hover {
+                        color: var(--couleur-speciale);
                     }
-                    @media all and (max-width: 1200px) {
-                        width: 100%;
-                    }
-                }
-                @media all and (max-width: 880px) {
-                    width: 90%;
                 }
             }
         }
