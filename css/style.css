@@ -26,6 +26,12 @@ body section h1 {
   font-size: xx-large;
 }
 
+@media all and (max-width: 600px) {
+  body section h1 {
+    margin-top: 50px;
+  }
+}
+
 body header {
   position: fixed;
   top: 0px;
@@ -735,7 +741,7 @@ body .article#competence .competence_ligne.competence_ligne_info .competence_con
   }
 }
 
-body .article#experience #experience_grid {
+body .article#experience #experience_flex {
   width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -749,7 +755,7 @@ body .article#experience #experience_grid {
           justify-content: center;
 }
 
-body .article#experience #experience_grid .experience {
+body .article#experience #experience_flex .experience {
   width: 370px;
   height: 339px;
   padding: 10px;
@@ -760,7 +766,7 @@ body .article#experience #experience_grid .experience {
       grid-template-rows: 80% 20%;
 }
 
-body .article#experience #experience_grid .experience .experience_image {
+body .article#experience #experience_flex .experience .experience_image {
   z-index: 2;
   width: 100%;
   height: auto;
@@ -772,7 +778,7 @@ body .article#experience #experience_grid .experience .experience_image {
   grid-row-end: 1;
 }
 
-body .article#experience #experience_grid .experience .experience_image img {
+body .article#experience #experience_flex .experience .experience_image img {
   width: 100%;
   height: 100%;
   border-radius: 10px 10px 0px 0px;
@@ -780,7 +786,7 @@ body .article#experience #experience_grid .experience .experience_image img {
      object-fit: cover;
 }
 
-body .article#experience #experience_grid .experience .experience_details {
+body .article#experience #experience_flex .experience .experience_details {
   z-index: 1;
   -ms-grid-column: 1;
       grid-column-start: 1;
@@ -790,40 +796,40 @@ body .article#experience #experience_grid .experience .experience_details {
   grid-row-end: 1;
 }
 
-body .article#experience #experience_grid .experience .experience_details p {
+body .article#experience #experience_flex .experience .experience_details p {
   padding: 2%;
   width: 96%;
 }
 
 @media all and (max-width: 400px) {
-  body .article#experience #experience_grid .experience .experience_details {
+  body .article#experience #experience_flex .experience .experience_details {
     font-size: medium;
   }
 }
 
-body .article#experience #experience_grid .experience .experience_titre {
+body .article#experience #experience_flex .experience .experience_titre {
   padding: 10px;
   border-radius: 0px 0px 10px 10px;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-body .article#experience #experience_grid .experience p {
+body .article#experience #experience_flex .experience p {
   margin: 0px;
   text-align: justify;
   font-weight: bold;
 }
 
-body .article#experience #experience_grid .experience .experience_descriptif {
+body .article#experience #experience_flex .experience .experience_descriptif {
   width: 330px;
 }
 
-body .article#experience #experience_grid .experience:hover .experience_image {
+body .article#experience #experience_flex .experience:hover .experience_image {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   opacity: 0.2;
 }
 
-body .article#experience #experience_grid .experience:hover .experience_details {
+body .article#experience #experience_flex .experience:hover .experience_details {
   -webkit-transition: 1s;
   transition: 1s;
   z-index: 3;
@@ -838,19 +844,19 @@ body .article#experience #experience_grid .experience:hover .experience_details 
 }
 
 @media all and (max-width: 1700px) {
-  body .article#experience #experience_grid {
+  body .article#experience #experience_flex {
     width: 80%;
   }
 }
 
 @media all and (max-width: 1500px) {
-  body .article#experience #experience_grid {
+  body .article#experience #experience_flex {
     width: 90%;
   }
 }
 
 @media all and (max-width: 1500px) {
-  body .article#experience #experience_grid {
+  body .article#experience #experience_flex {
     width: 100%;
   }
 }
@@ -1041,11 +1047,6 @@ body .article#projet #projet_grid .projet_conteneur .projet .projet_decriptif {
           align-items: flex-start;
 }
 
-body .article#projet #projet_grid .projet_conteneur .projet .projet_decriptif p {
-  margin: 0px;
-  width: 40px;
-}
-
 @media all and (max-width: 790px) {
   body .article#projet #projet_grid .projet_conteneur .projet {
     width: 325px;
@@ -1090,10 +1091,8 @@ body .article#contact #reseau {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1112,10 +1111,8 @@ body .article#contact #reseau div {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1164,6 +1161,15 @@ body .article#contact #reseau div a#linkedin {
 
 body .article#contact #reseau div a#linkedin::before {
   content: "\f0e1";
+}
+
+@media all and (max-width: 370px) {
+  body .article#contact #reseau div a {
+    margin-left: 0px;
+  }
+  body .article#contact #reseau div a + a {
+    margin-left: 20px;
+  }
 }
 
 body .article#contact #reseau div a:visited {
