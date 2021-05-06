@@ -1084,6 +1084,12 @@ body .article#projet #projet_grid .projet_conteneur:hover .projet_decriptif {
   }
 }
 
+@media all and (max-width: 790px) {
+  body .article#projet + hr {
+    margin-top: 280px;
+  }
+}
+
 body .article#contact #reseau {
   width: 100%;
   display: -webkit-box;
