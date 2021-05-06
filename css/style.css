@@ -1169,7 +1169,7 @@ body .article#contact #reseau div a#linkedin::before {
   content: "\f0e1";
 }
 
-@media all and (max-width: 370px) {
+@media all and (max-width: 390px) {
   body .article#contact #reseau div a {
     margin-left: 0px;
   }
@@ -1184,6 +1184,15 @@ body .article#contact #reseau div a:visited {
 
 body .article#contact #reseau div a:hover {
   color: var(--couleur-speciale);
+}
+
+@media all and (max-width: 390px) {
+  body .article#contact #reseau {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 body .couleur_speciale {
